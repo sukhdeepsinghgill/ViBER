@@ -1,5 +1,7 @@
 # ViBEr
-### A visibility-based angular bispectrum estimator
+## Visibility-based angular Bispectrum Estimation using Radio interferometric data. 
+### It takes gridded visibility data from a single frequency channel and computes the angular bispectrum by correlating all possible triplets of baselines that form a closed triangle.
+
 
 [Paper](https://doi.org/10.3847/1538-4357/ad9b20) · [arXiv](https://arxiv.org/abs/2412.02246) · [Installation](docs/INSTALL.md) · [Code review](docs/REVIEW.md)
 
