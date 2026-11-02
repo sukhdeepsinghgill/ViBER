@@ -1,0 +1,8 @@
+./vcg ../2b_visfitsgrid/data/single_chan_1.fits inputparameters output_data/GV_data_1 1 output_data/sampling
+
+
+
+./vcg ../2b_visfitsgrid/single_chan.fits inputparameters GV_data
+./vcg ../2b_visfitsgrid/Usingle_chan.fits inputparameters UGV_data
+
+

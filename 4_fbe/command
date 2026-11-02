@@ -1,0 +1,9 @@
+### For BS ####
+make viber 
+./viber GV_data sampling
+
+
+### For PS ####
+make PS_2D_VCG 
+    ./PS_2D_VCG ${realization_number} GV_data
+

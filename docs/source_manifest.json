@@ -1,0 +1,242 @@
+[
+  {
+    "original": "pipeline.sh",
+    "packaged": "pipeline.sh",
+    "original_sha256": "812e705b34c2c466c39e71a2b5896207a06dc1183d2484beab2f826c9759c0be",
+    "packaged_sha256": "812e705b34c2c466c39e71a2b5896207a06dc1183d2484beab2f826c9759c0be"
+  },
+  {
+    "original": "2b_visfitsgrid/makefile",
+    "packaged": "2b_visfitsgrid/makefile",
+    "original_sha256": "48c2b780848152b3ce55ac7556a61f560450112e4cf02423c2c210ed85aa5dc6",
+    "packaged_sha256": "48c2b780848152b3ce55ac7556a61f560450112e4cf02423c2c210ed85aa5dc6"
+  },
+  {
+    "original": "2b_visfitsgrid/fitsprog.h",
+    "packaged": "2b_visfitsgrid/fitsprog.h",
+    "original_sha256": "2ec53feb6d7cac929aab2f8cf0d7e3c36f6cc1c1ef3cc6896312ff6e83a5a23e",
+    "packaged_sha256": "2ec53feb6d7cac929aab2f8cf0d7e3c36f6cc1c1ef3cc6896312ff6e83a5a23e"
+  },
+  {
+    "original": "2b_visfitsgrid/read_fits_func.h",
+    "packaged": "2b_visfitsgrid/read_fits_func.h",
+    "original_sha256": "06819773604b74befdb74175b3c072b7e7764dc124d8ff7cb953cb738de4c69e",
+    "packaged_sha256": "06819773604b74befdb74175b3c072b7e7764dc124d8ff7cb953cb738de4c69e"
+  },
+  {
+    "original": "2b_visfitsgrid/fitsprog.c",
+    "packaged": "2b_visfitsgrid/fitsprog.c",
+    "original_sha256": "084779d077da934a6324f227adbd7b58a2db50859edae52681e557760d6cb2b3",
+    "packaged_sha256": "084779d077da934a6324f227adbd7b58a2db50859edae52681e557760d6cb2b3"
+  },
+  {
+    "original": "2b_visfitsgrid/read_fits_func.c",
+    "packaged": "2b_visfitsgrid/read_fits_func.c",
+    "original_sha256": "c14440f1db36b81074e375fa00d5b17cbf292231a17a022029cd2d9f1bd3034a",
+    "packaged_sha256": "c14440f1db36b81074e375fa00d5b17cbf292231a17a022029cd2d9f1bd3034a"
+  },
+  {
+    "original": "2b_visfitsgrid/run_visfitsgrid.sh",
+    "packaged": "2b_visfitsgrid/run_visfitsgrid.sh",
+    "original_sha256": "037eb373e60e5ab871b7baf436fbd943c9ae26cf3e53b061f1979f2ecc1bb8b2",
+    "packaged_sha256": "037eb373e60e5ab871b7baf436fbd943c9ae26cf3e53b061f1979f2ecc1bb8b2"
+  },
+  {
+    "original": "2b_visfitsgrid/visfitsgrid.c",
+    "packaged": "2b_visfitsgrid/visfitsgrid.c",
+    "original_sha256": "6e59eaa8ce4294b2b48c554d17d1f7aea98fbfb046b5598140f5e44d933aabcd",
+    "packaged_sha256": "6e59eaa8ce4294b2b48c554d17d1f7aea98fbfb046b5598140f5e44d933aabcd"
+  },
+  {
+    "original": "2b_visfitsgrid/run_visfitsgrid",
+    "packaged": "2b_visfitsgrid/run_visfitsgrid",
+    "original_sha256": "993108c41e2fd0ca8470c28971b8c336ef40910ebdfcb504d96852db536682a6",
+    "packaged_sha256": "993108c41e2fd0ca8470c28971b8c336ef40910ebdfcb504d96852db536682a6"
+  },
+  {
+    "original": "2b_visfitsgrid/make_copies.sh",
+    "packaged": "2b_visfitsgrid/make_copies.sh",
+    "original_sha256": "4cb5b4b4ba236a4164f8676dcbf64705126f8982fc3fd0071d6d06d5cc51f70e",
+    "packaged_sha256": "4cb5b4b4ba236a4164f8676dcbf64705126f8982fc3fd0071d6d06d5cc51f70e"
+  },
+  {
+    "original": "1_ngrf/ngrf_2d.c",
+    "packaged": "1_ngrf/ngrf_2d.c",
+    "original_sha256": "9c7682194fed10a5a2f204892a2fe87d84f85e738e5582f8bebba3dc33ef0ed2",
+    "packaged_sha256": "9c7682194fed10a5a2f204892a2fe87d84f85e738e5582f8bebba3dc33ef0ed2"
+  },
+  {
+    "original": "1_ngrf/makefile",
+    "packaged": "1_ngrf/makefile",
+    "original_sha256": "d7e8f91a8dec903eaf9d16b5558e0b592020291cc17b5ecabeda4ac4bc568713",
+    "packaged_sha256": "d7e8f91a8dec903eaf9d16b5558e0b592020291cc17b5ecabeda4ac4bc568713"
+  },
+  {
+    "original": "1_ngrf/run_ngrf_2d",
+    "packaged": "1_ngrf/run_ngrf_2d",
+    "original_sha256": "418e3455c19509ae6a4f4557d3143f03ca8931c9d85514b88c0ff8979b4f64dd",
+    "packaged_sha256": "418e3455c19509ae6a4f4557d3143f03ca8931c9d85514b88c0ff8979b4f64dd"
+  },
+  {
+    "original": "1_ngrf/beam.c",
+    "packaged": "1_ngrf/beam.c",
+    "original_sha256": "e2507ab938b61f5add986ed0709c34a5fa5e259d89f7c98347cb12ffddcf72ca",
+    "packaged_sha256": "e2507ab938b61f5add986ed0709c34a5fa5e259d89f7c98347cb12ffddcf72ca"
+  },
+  {
+    "original": "1_ngrf/fitsprog_2d.c",
+    "packaged": "1_ngrf/fitsprog_2d.c",
+    "original_sha256": "a5824a3a6a4c7611aa75d0d9fa4db0f346a4246eef5be9ddc9d7215f25041660",
+    "packaged_sha256": "a5824a3a6a4c7611aa75d0d9fa4db0f346a4246eef5be9ddc9d7215f25041660"
+  },
+  {
+    "original": "1_ngrf/run_ngrf.sh",
+    "packaged": "1_ngrf/run_ngrf.sh",
+    "original_sha256": "458194eda553a3eb936b28ffe880114662a6859a0c8537ed18a881f6e0cb4d38",
+    "packaged_sha256": "458194eda553a3eb936b28ffe880114662a6859a0c8537ed18a881f6e0cb4d38"
+  },
+  {
+    "original": "1_ngrf/ngrf_2d_funcs.c",
+    "packaged": "1_ngrf/ngrf_2d_funcs.c",
+    "original_sha256": "22f7e82ab5b7bbe6b9de8fd26347df909fd17e9406b3d86b39a03087ddd39cce",
+    "packaged_sha256": "22f7e82ab5b7bbe6b9de8fd26347df909fd17e9406b3d86b39a03087ddd39cce"
+  },
+  {
+    "original": "4_fbe/PS_2D_VCG.c",
+    "packaged": "4_fbe/PS_2D_VCG.c",
+    "original_sha256": "a866406bad56f697f3945bc58b0f527ed715f3c09c8a181c0fc0933fdf0206db",
+    "packaged_sha256": "a866406bad56f697f3945bc58b0f527ed715f3c09c8a181c0fc0933fdf0206db"
+  },
+  {
+    "original": "4_fbe/run_viber.sh",
+    "packaged": "4_fbe/run_viber.sh",
+    "original_sha256": "babadf7bfb8325af0fb48a12b916457a7988b1673f488abb74195ba10d2c7043",
+    "packaged_sha256": "babadf7bfb8325af0fb48a12b916457a7988b1673f488abb74195ba10d2c7043"
+  },
+  {
+    "original": "4_fbe/makefile",
+    "packaged": "4_fbe/makefile",
+    "original_sha256": "811f0d6e3db2edbc126001bd2c723fac0ede32341496fb03f4493adb422f188b",
+    "packaged_sha256": "811f0d6e3db2edbc126001bd2c723fac0ede32341496fb03f4493adb422f188b"
+  },
+  {
+    "original": "4_fbe/viber.c",
+    "packaged": "4_fbe/viber.c",
+    "original_sha256": "10c867b41d15380f35f847896b6e72506497745b0361417c1a2cf083fa10a3f1",
+    "packaged_sha256": "10c867b41d15380f35f847896b6e72506497745b0361417c1a2cf083fa10a3f1"
+  },
+  {
+    "original": "4_fbe/viber_equi_fast.c",
+    "packaged": "4_fbe/viber_equi_fast.c",
+    "original_sha256": "a7bbad3bb5e1c8e7ec1ac62ec763b5a6094c306da17c787ac71dca8a100538d8",
+    "packaged_sha256": "a7bbad3bb5e1c8e7ec1ac62ec763b5a6094c306da17c787ac71dca8a100538d8"
+  },
+  {
+    "original": "4_fbe/command",
+    "packaged": "4_fbe/command",
+    "original_sha256": "4f55e624df4bdfd174d657bd10e6e9c035073ef598e56fe1f0a8f6d3e6ffec6e",
+    "packaged_sha256": "4f55e624df4bdfd174d657bd10e6e9c035073ef598e56fe1f0a8f6d3e6ffec6e"
+  },
+  {
+    "original": "4_fbe/run_viber_equi_fast.sh",
+    "packaged": "4_fbe/run_viber_equi_fast.sh",
+    "original_sha256": "a809e933d73f9b5b38026193c7ebf47cae9779d0f611886f5e85423041b7e9b7",
+    "packaged_sha256": "a809e933d73f9b5b38026193c7ebf47cae9779d0f611886f5e85423041b7e9b7"
+  },
+  {
+    "original": "4_fbe/viber_funcs.c",
+    "packaged": "4_fbe/viber_funcs.c",
+    "original_sha256": "0f704cc6b7451a4c4c0be94d6682d946404d47ae5d38caa5c225767c18777c51",
+    "packaged_sha256": "0f704cc6b7451a4c4c0be94d6682d946404d47ae5d38caa5c225767c18777c51"
+  },
+  {
+    "original": "3_vcg/run_vcg",
+    "packaged": "3_vcg/run_vcg",
+    "original_sha256": "6c8b9cf8e54cc9cb51c5ff48b2a841128e2ccdacf4761b1e468d4d0133ebfd10",
+    "packaged_sha256": "6c8b9cf8e54cc9cb51c5ff48b2a841128e2ccdacf4761b1e468d4d0133ebfd10"
+  },
+  {
+    "original": "3_vcg/read_fits_funcmfs.c",
+    "packaged": "3_vcg/read_fits_funcmfs.c",
+    "original_sha256": "17e8a544315ad00ea30ec13ab76d4bb47babe293d1cec21e941ad6112f71a4a1",
+    "packaged_sha256": "17e8a544315ad00ea30ec13ab76d4bb47babe293d1cec21e941ad6112f71a4a1"
+  },
+  {
+    "original": "3_vcg/Makefile",
+    "packaged": "3_vcg/Makefile",
+    "original_sha256": "f7bb04f1118cec835f70e87e6ede021ec5e580f0e5a4e0ff6b5b07e2a4d19fc7",
+    "packaged_sha256": "f7bb04f1118cec835f70e87e6ede021ec5e580f0e5a4e0ff6b5b07e2a4d19fc7"
+  },
+  {
+    "original": "3_vcg/tgefuncs.h",
+    "packaged": "3_vcg/tgefuncs.h",
+    "original_sha256": "2565c4d4aa617e3877f127b64c06d1baa68719d148d58963d2803283d5224672",
+    "packaged_sha256": "2565c4d4aa617e3877f127b64c06d1baa68719d148d58963d2803283d5224672"
+  },
+  {
+    "original": "3_vcg/read_fits_func.h",
+    "packaged": "3_vcg/read_fits_func.h",
+    "original_sha256": "8fa70d9f5c841878ac436455e9c5945ce289e323b166bf607fa6d6654cfc43bc",
+    "packaged_sha256": "8fa70d9f5c841878ac436455e9c5945ce289e323b166bf607fa6d6654cfc43bc"
+  },
+  {
+    "original": "3_vcg/inputparameters",
+    "packaged": "3_vcg/inputparameters",
+    "original_sha256": "dbf7b99824f9f67c21f49b76eb86a44ed02837abd975052603540c60c14b3076",
+    "packaged_sha256": "dbf7b99824f9f67c21f49b76eb86a44ed02837abd975052603540c60c14b3076"
+  },
+  {
+    "original": "3_vcg/main.c",
+    "packaged": "3_vcg/main.c",
+    "original_sha256": "4c02eebda5953add8248c25ca6d5d248244e2b666764c691870ad5969cdcd456",
+    "packaged_sha256": "4c02eebda5953add8248c25ca6d5d248244e2b666764c691870ad5969cdcd456"
+  },
+  {
+    "original": "3_vcg/tgefuncs.c",
+    "packaged": "3_vcg/tgefuncs.c",
+    "original_sha256": "cc40d0b1db4cca3a412b47832ce010e42df717d216ba5db97816e47970276dbb",
+    "packaged_sha256": "cc40d0b1db4cca3a412b47832ce010e42df717d216ba5db97816e47970276dbb"
+  },
+  {
+    "original": "3_vcg/run_vcg.sh",
+    "packaged": "3_vcg/run_vcg.sh",
+    "original_sha256": "f9cb15690be65bbbd74c62466bc2512bc344e6404a6fc5af77aed95f490a4269",
+    "packaged_sha256": "f9cb15690be65bbbd74c62466bc2512bc344e6404a6fc5af77aed95f490a4269"
+  },
+  {
+    "original": "2b_visfitsgrid/.ipynb_checkpoints/uv_sampling-checkpoint.ipynb",
+    "packaged": "legacy_notebooks/2b_visfitsgrid_uv_sampling.ipynb",
+    "original_sha256": "ad423b406b3182ac9f99907c984f8af13a52e8c432af564c4218f3815d15b481",
+    "packaged_sha256": "ad423b406b3182ac9f99907c984f8af13a52e8c432af564c4218f3815d15b481"
+  },
+  {
+    "original": "4_fbe/.ipynb_checkpoints/FBE_2D_other_tests-checkpoint.ipynb",
+    "packaged": "legacy_notebooks/4_fbe_FBE_2D_other_tests.ipynb",
+    "original_sha256": "fc825933c339044335762ccf4c9622ac1772c73ebe65cbf10103c09be0a0c4b9",
+    "packaged_sha256": "fc825933c339044335762ccf4c9622ac1772c73ebe65cbf10103c09be0a0c4b9"
+  },
+  {
+    "original": "4_fbe/.ipynb_checkpoints/fbe_all_triangles_same_but_alltriplotchangetol1000_lastcode-checkpoint.ipynb",
+    "packaged": "legacy_notebooks/4_fbe_fbe_all_triangles_same_but_alltriplotchangetol1000_lastcode.ipynb",
+    "original_sha256": "6396d3be3b9f4acc1eb4e808f86ac1bebae351e430ee69ca0f2a7cfb0a7d8593",
+    "packaged_sha256": "621c6aa2f062a2c7cb8e930a87aea9631c7aaafcb8688b3c9744a6bc98173d43"
+  },
+  {
+    "original": "4_fbe/.ipynb_checkpoints/Omega_calc-checkpoint.ipynb",
+    "packaged": "legacy_notebooks/4_fbe_Omega_calc.ipynb",
+    "original_sha256": "6396d3be3b9f4acc1eb4e808f86ac1bebae351e430ee69ca0f2a7cfb0a7d8593",
+    "packaged_sha256": "621c6aa2f062a2c7cb8e930a87aea9631c7aaafcb8688b3c9744a6bc98173d43"
+  },
+  {
+    "original": "4_fbe/.ipynb_checkpoints/fbe_all_triangles-checkpoint.ipynb",
+    "packaged": "legacy_notebooks/4_fbe_fbe_all_triangles.ipynb",
+    "original_sha256": "df0009c7f044a77e9c2e7fc3c7eeddcc8df4c7f2f49f56b3f35038489cc8644c",
+    "packaged_sha256": "864194196a7dc26e6da75601a274c80d5d1759d76494d18bbb51ec33743cb521"
+  },
+  {
+    "original": "4_fbe/.ipynb_checkpoints/FBE_2D-checkpoint.ipynb",
+    "packaged": "legacy_notebooks/4_fbe_FBE_2D.ipynb",
+    "original_sha256": "aa40a3f24e5e9a64995be7491bc436720c6ffb34aba526ec0f1a460d4ef2163e",
+    "packaged_sha256": "aa40a3f24e5e9a64995be7491bc436720c6ffb34aba526ec0f1a460d4ef2163e"
+  }
+]

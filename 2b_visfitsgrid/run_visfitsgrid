@@ -1,0 +1,3 @@
+./visfitsgrid ../1_ngrf/output_data/image_Q.beam.In_1c_1.FITS data/single_chan_1.fits 0
+
+

@@ -1,0 +1,687 @@
+gcc -I<LOCAL_DEPENDENCY_PREFIX>/include -O2 -std=gnu11 -Wall -Wextra -fopenmp 1_ngrf/ngrf_2d.c 1_ngrf/ngrf_2d_funcs.c 1_ngrf/fitsprog_2d.c 1_ngrf/beam.c -L<LOCAL_DEPENDENCY_PREFIX>/lib/x86_64-linux-gnu -Wl,-rpath,<LOCAL_DEPENDENCY_PREFIX>/lib/x86_64-linux-gnu -lfftw3_omp -lfftw3 -lgsl -lgslcblas -lcfitsio -lm -o 1_ngrf/ngrf_2d
+1_ngrf/ngrf_2d.c: In function ‘P_T’:
+1_ngrf/ngrf_2d.c:21:16: warning: unused variable ‘betav’ [-Wunused-variable]
+   21 |   double Av=1, betav=-1.0; // amplitude and multipole exponent of APS
+      |                ^~~~~
+1_ngrf/ngrf_2d.c:21:10: warning: unused variable ‘Av’ [-Wunused-variable]
+   21 |   double Av=1, betav=-1.0; // amplitude and multipole exponent of APS
+      |          ^~
+1_ngrf/ngrf_2d.c:19:10: warning: variable ‘ell’ set but not used [-Wunused-but-set-variable]
+   19 |   double ell,pu;
+      |          ^~~
+1_ngrf/ngrf_2d.c: In function ‘main’:
+1_ngrf/ngrf_2d.c:52:26: warning: unused variable ‘be’ [-Wunused-variable]
+   52 |   double thetax, thetay, be;
+      |                          ^~
+1_ngrf/ngrf_2d.c:52:18: warning: unused variable ‘thetay’ [-Wunused-variable]
+   52 |   double thetax, thetay, be;
+      |                  ^~~~~~
+1_ngrf/ngrf_2d.c:52:10: warning: unused variable ‘thetax’ [-Wunused-variable]
+   52 |   double thetax, thetay, be;
+      |          ^~~~~~
+1_ngrf/ngrf_2d.c:49:14: warning: unused variable ‘task’ [-Wunused-variable]
+   49 |   char  OPT, task[128];
+      |              ^~~~
+1_ngrf/ngrf_2d.c:49:9: warning: unused variable ‘OPT’ [-Wunused-variable]
+   49 |   char  OPT, task[128];
+      |         ^~~
+1_ngrf/ngrf_2d.c:47:27: warning: unused variable ‘nu’ [-Wunused-variable]
+   47 |   double  LL,pixel,ff,nu0,nu;
+      |                           ^~
+1_ngrf/ngrf_2d.c:47:14: warning: variable ‘pixel’ set but not used [-Wunused-but-set-variable]
+   47 |   double  LL,pixel,ff,nu0,nu;
+      |              ^~~~~
+1_ngrf/ngrf_2d.c:46:36: warning: unused variable ‘ja’ [-Wunused-variable]
+   46 |   int NN,length, ii, jj, indx, ia, ja;
+      |                                    ^~
+1_ngrf/ngrf_2d.c:46:32: warning: unused variable ‘ia’ [-Wunused-variable]
+   46 |   int NN,length, ii, jj, indx, ia, ja;
+      |                                ^~
+1_ngrf/ngrf_2d.c:46:10: warning: unused variable ‘length’ [-Wunused-variable]
+   46 |   int NN,length, ii, jj, indx, ia, ja;
+      |          ^~~~~~
+1_ngrf/ngrf_2d_funcs.c: In function ‘Non_Gauss’:
+1_ngrf/ngrf_2d_funcs.c:220:30: warning: unused parameter ‘LL’ [-Wunused-parameter]
+  220 | void Non_Gauss(int NN,double LL,double *out,double ff)
+      |                       ~~~~~~~^~
+1_ngrf/ngrf_2d_funcs.c: In function ‘PB_Flux_MF’:
+1_ngrf/ngrf_2d_funcs.c:266:20: warning: variable ‘limpixel’ set but not used [-Wunused-but-set-variable]
+  266 |   long fimpixel[3],limpixel[3];  //3D
+      |                    ^~~~~~~~
+1_ngrf/ngrf_2d_funcs.c:266:8: warning: variable ‘fimpixel’ set but not used [-Wunused-but-set-variable]
+  266 |   long fimpixel[3],limpixel[3];  //3D
+      |        ^~~~~~~~
+1_ngrf/ngrf_2d_funcs.c:263:46: warning: variable ‘nu’ set but not used [-Wunused-but-set-variable]
+  263 |   double thetax, thetay, theta, rjfac, LLsq, nu, be;
+      |                                              ^~
+1_ngrf/ngrf_2d_funcs.c:263:33: warning: variable ‘rjfac’ set but not used [-Wunused-but-set-variable]
+  263 |   double thetax, thetay, theta, rjfac, LLsq, nu, be;
+      |                                 ^~~~~
+1_ngrf/ngrf_2d_funcs.c:263:26: warning: unused variable ‘theta’ [-Wunused-variable]
+  263 |   double thetax, thetay, theta, rjfac, LLsq, nu, be;
+      |                          ^~~~~
+1_ngrf/ngrf_2d_funcs.c:260:104: warning: unused parameter ‘spindex’ [-Wunused-parameter]
+  260 | void PB_Flux_MF(int NN,double LL, double *out, double *img, int Nchan, double nu0,double chan0, double spindex,double deltanu)
+      |                                                                                                 ~~~~~~~^~~~~~~
+1_ngrf/ngrf_2d_funcs.c: In function ‘PB_Flux_MF_BAIC’:
+1_ngrf/ngrf_2d_funcs.c:305:20: warning: variable ‘limpixel’ set but not used [-Wunused-but-set-variable]
+  305 |   long fimpixel[3],limpixel[3];  //3D
+      |                    ^~~~~~~~
+1_ngrf/ngrf_2d_funcs.c:305:8: warning: variable ‘fimpixel’ set but not used [-Wunused-but-set-variable]
+  305 |   long fimpixel[3],limpixel[3];  //3D
+      |        ^~~~~~~~
+1_ngrf/ngrf_2d_funcs.c:302:46: warning: variable ‘nu’ set but not used [-Wunused-but-set-variable]
+  302 |   double thetax, thetay, theta, rjfac, LLsq, nu, be;
+      |                                              ^~
+1_ngrf/ngrf_2d_funcs.c:302:33: warning: variable ‘rjfac’ set but not used [-Wunused-but-set-variable]
+  302 |   double thetax, thetay, theta, rjfac, LLsq, nu, be;
+      |                                 ^~~~~
+1_ngrf/ngrf_2d_funcs.c:302:26: warning: unused variable ‘theta’ [-Wunused-variable]
+  302 |   double thetax, thetay, theta, rjfac, LLsq, nu, be;
+      |                          ^~~~~
+1_ngrf/ngrf_2d_funcs.c:299:109: warning: unused parameter ‘spindex’ [-Wunused-parameter]
+  299 | void PB_Flux_MF_BAIC(int NN,double LL, double *out, double *img, int Nchan, double nu0,double chan0, double spindex,double deltanu)
+      |                                                                                                      ~~~~~~~^~~~~~~
+1_ngrf/ngrf_2d_funcs.c: In function ‘PB_Flux_MF_bessel’:
+1_ngrf/ngrf_2d_funcs.c:351:20: warning: variable ‘limpixel’ set but not used [-Wunused-but-set-variable]
+  351 |   long fimpixel[3],limpixel[3];  //3D
+      |                    ^~~~~~~~
+1_ngrf/ngrf_2d_funcs.c:351:8: warning: variable ‘fimpixel’ set but not used [-Wunused-but-set-variable]
+  351 |   long fimpixel[3],limpixel[3];  //3D
+      |        ^~~~~~~~
+1_ngrf/fitsprog_2d.c: In function ‘Write_Fits_MF_Image’:
+1_ngrf/fitsprog_2d.c:102:24: warning: unused variable ‘naxes’ [-Wunused-variable]
+  102 |   long naxesim[naxis], naxes[naxis];
+      |                        ^~~~~
+1_ngrf/fitsprog_2d.c:94:10: warning: variable ‘nu’ set but not used [-Wunused-but-set-variable]
+   94 |   double nu;//In Hz
+      |          ^~
+1_ngrf/beam.c: In function ‘Beam_sinc’:
+1_ngrf/beam.c:12:26: warning: unused variable ‘arg’ [-Wunused-variable]
+   12 |   double be, be_x, be_y, arg;
+      |                          ^~~
+1_ngrf/beam.c: In function ‘Beam_bessel’:
+1_ngrf/beam.c:37:13: warning: variable ‘arg’ set but not used [-Wunused-but-set-variable]
+   37 |   double be,arg;
+      |             ^~~
+gcc -I<LOCAL_DEPENDENCY_PREFIX>/include -O2 -std=gnu11 -Wall -Wextra -fopenmp 2b_visfitsgrid/fitsprog.c 2b_visfitsgrid/visfitsgrid.c 2b_visfitsgrid/read_fits_func.c -L<LOCAL_DEPENDENCY_PREFIX>/lib/x86_64-linux-gnu -Wl,-rpath,<LOCAL_DEPENDENCY_PREFIX>/lib/x86_64-linux-gnu -lfftw3_omp -lfftw3 -lgsl -lgslcblas -lcfitsio -lm -o 2b_visfitsgrid/visfitsgrid
+2b_visfitsgrid/visfitsgrid.c: In function ‘main’:
+2b_visfitsgrid/visfitsgrid.c:192:14: warning: using integer absolute value function ‘abs’ when argument is of floating-point type ‘double’ [-Wabsolute-value]
+  192 |           if(abs(uuc)<(NN*dU/2.) && abs(vvc)<(NN*dU/2.)) //  read  uv compo of UVFITS and compare with the~( 6* Umax) value of Image : check (u,v) from UVFITS < Umax (FITS image)
+      |              ^~~
+2b_visfitsgrid/visfitsgrid.c:192:37: warning: using integer absolute value function ‘abs’ when argument is of floating-point type ‘double’ [-Wabsolute-value]
+  192 |           if(abs(uuc)<(NN*dU/2.) && abs(vvc)<(NN*dU/2.)) //  read  uv compo of UVFITS and compare with the~( 6* Umax) value of Image : check (u,v) from UVFITS < Umax (FITS image)
+      |                                     ^~~
+2b_visfitsgrid/visfitsgrid.c:21:7: warning: variable ‘nbasln’ set but not used [-Wunused-but-set-variable]
+   21 |   int nbasln,NN;
+      |       ^~~~~~
+2b_visfitsgrid/visfitsgrid.c:20:28: warning: unused variable ‘jj1’ [-Wunused-variable]
+   20 |   int chan,n_ave,ii,jj,ii1,jj1;
+      |                            ^~~
+2b_visfitsgrid/read_fits_func.c: In function ‘read_fits_header’:
+2b_visfitsgrid/read_fits_func.c:42:19: warning: unused variable ‘ttest’ [-Wunused-variable]
+   42 |   int ii,jj,kk,st,ttest;
+      |                   ^~~~~
+2b_visfitsgrid/read_fits_func.c:42:16: warning: unused variable ‘st’ [-Wunused-variable]
+   42 |   int ii,jj,kk,st,ttest;
+      |                ^~
+2b_visfitsgrid/read_fits_func.c:42:13: warning: unused variable ‘kk’ [-Wunused-variable]
+   42 |   int ii,jj,kk,st,ttest;
+      |             ^~
+2b_visfitsgrid/read_fits_func.c:42:10: warning: unused variable ‘jj’ [-Wunused-variable]
+   42 |   int ii,jj,kk,st,ttest;
+      |          ^~
+2b_visfitsgrid/read_fits_func.c:42:7: warning: unused variable ‘ii’ [-Wunused-variable]
+   42 |   int ii,jj,kk,st,ttest;
+      |       ^~
+2b_visfitsgrid/read_fits_func.c:33:8: warning: unused variable ‘key_naxis’ [-Wunused-variable]
+   33 |   char key_naxis[FLEN_KEYWORD]="NAXIS"; //32/64 /bits per data pixel
+      |        ^~~~~~~~~
+2b_visfitsgrid/read_fits_func.c: In function ‘readfits’:
+2b_visfitsgrid/read_fits_func.c:185:14: warning: variable ‘delnubynu’ set but not used [-Wunused-but-set-variable]
+  185 |   float Uval,delnubynu,signv;
+      |              ^~~~~~~~~
+2b_visfitsgrid/read_fits_func.c:182:15: warning: unused variable ‘fp1’ [-Wunused-variable]
+  182 |   FILE *fp2, *fp1;
+      |               ^~~
+2b_visfitsgrid/read_fits_func.c:182:9: warning: unused variable ‘fp2’ [-Wunused-variable]
+  182 |   FILE *fp2, *fp1;
+      |         ^~~
+gcc -I<LOCAL_DEPENDENCY_PREFIX>/include -O2 -std=gnu11 -Wall -Wextra -fopenmp 3_vcg/read_fits_funcmfs.c 3_vcg/tgefuncs.c 3_vcg/main.c -L<LOCAL_DEPENDENCY_PREFIX>/lib/x86_64-linux-gnu -Wl,-rpath,<LOCAL_DEPENDENCY_PREFIX>/lib/x86_64-linux-gnu -lfftw3_omp -lfftw3 -lgsl -lgslcblas -lcfitsio -lm -o 3_vcg/vcg
+3_vcg/read_fits_funcmfs.c: In function ‘read_fits_header’:
+3_vcg/read_fits_funcmfs.c:41:19: warning: unused variable ‘ttest’ [-Wunused-variable]
+   41 |   int ii,jj,kk,st,ttest;
+      |                   ^~~~~
+3_vcg/read_fits_funcmfs.c:41:16: warning: unused variable ‘st’ [-Wunused-variable]
+   41 |   int ii,jj,kk,st,ttest;
+      |                ^~
+3_vcg/read_fits_funcmfs.c:41:13: warning: unused variable ‘kk’ [-Wunused-variable]
+   41 |   int ii,jj,kk,st,ttest;
+      |             ^~
+3_vcg/read_fits_funcmfs.c:41:10: warning: unused variable ‘jj’ [-Wunused-variable]
+   41 |   int ii,jj,kk,st,ttest;
+      |          ^~
+3_vcg/read_fits_funcmfs.c:41:7: warning: unused variable ‘ii’ [-Wunused-variable]
+   41 |   int ii,jj,kk,st,ttest;
+      |       ^~
+3_vcg/read_fits_funcmfs.c:32:8: warning: unused variable ‘key_naxis’ [-Wunused-variable]
+   32 |   char key_naxis[FLEN_KEYWORD]="NAXIS";
+      |        ^~~~~~~~~
+3_vcg/tgefuncs.c: In function ‘initialize’:
+3_vcg/tgefuncs.c:45:10: warning: unused variable ‘jj’ [-Wunused-variable]
+   45 |   int ii,jj,nn,sf,Ngrid;
+      |          ^~
+3_vcg/tgefuncs.c: In function ‘initialize_gridding’:
+3_vcg/tgefuncs.c:290:16: warning: unused variable ‘sf’ [-Wunused-variable]
+  290 |   int ii,jj,nn,sf,Ngrid;
+      |                ^~
+3_vcg/tgefuncs.c:290:10: warning: unused variable ‘jj’ [-Wunused-variable]
+  290 |   int ii,jj,nn,sf,Ngrid;
+      |          ^~
+3_vcg/tgefuncs.c: In function ‘group_loop_gridding’:
+3_vcg/tgefuncs.c:370:43: warning: unused variable ‘sLLr’ [-Wunused-variable]
+  370 |   double diff,wt,gRRr,gRRi,gLLr,gLLi,sRRr,sLLr;
+      |                                           ^~~~
+3_vcg/tgefuncs.c:370:38: warning: unused variable ‘sRRr’ [-Wunused-variable]
+  370 |   double diff,wt,gRRr,gRRi,gLLr,gLLi,sRRr,sLLr;
+      |                                      ^~~~
+3_vcg/tgefuncs.c:370:33: warning: unused variable ‘gLLi’ [-Wunused-variable]
+  370 |   double diff,wt,gRRr,gRRi,gLLr,gLLi,sRRr,sLLr;
+      |                                 ^~~~
+3_vcg/tgefuncs.c:370:28: warning: unused variable ‘gLLr’ [-Wunused-variable]
+  370 |   double diff,wt,gRRr,gRRi,gLLr,gLLi,sRRr,sLLr;
+      |                            ^~~~
+3_vcg/tgefuncs.c:370:23: warning: unused variable ‘gRRi’ [-Wunused-variable]
+  370 |   double diff,wt,gRRr,gRRi,gLLr,gLLi,sRRr,sLLr;
+      |                       ^~~~
+3_vcg/tgefuncs.c:370:18: warning: unused variable ‘gRRr’ [-Wunused-variable]
+  370 |   double diff,wt,gRRr,gRRi,gLLr,gLLi,sRRr,sLLr;
+      |                  ^~~~
+3_vcg/tgefuncs.c:370:15: warning: unused variable ‘wt’ [-Wunused-variable]
+  370 |   double diff,wt,gRRr,gRRi,gLLr,gLLi,sRRr,sLLr;
+      |               ^~
+3_vcg/tgefuncs.c:370:10: warning: unused variable ‘diff’ [-Wunused-variable]
+  370 |   double diff,wt,gRRr,gRRi,gLLr,gLLi,sRRr,sLLr;
+      |          ^~~~
+3_vcg/tgefuncs.c:369:25: warning: unused variable ‘ny’ [-Wunused-variable]
+  369 |   int nn,ii,jj,kk,ll,nx,ny,index,ch1,ch2,dnu;
+      |                         ^~
+3_vcg/tgefuncs.c:369:22: warning: unused variable ‘nx’ [-Wunused-variable]
+  369 |   int nn,ii,jj,kk,ll,nx,ny,index,ch1,ch2,dnu;
+      |                      ^~
+3_vcg/tgefuncs.c:369:19: warning: unused variable ‘ll’ [-Wunused-variable]
+  369 |   int nn,ii,jj,kk,ll,nx,ny,index,ch1,ch2,dnu;
+      |                   ^~
+3_vcg/tgefuncs.c:369:16: warning: unused variable ‘kk’ [-Wunused-variable]
+  369 |   int nn,ii,jj,kk,ll,nx,ny,index,ch1,ch2,dnu;
+      |                ^~
+3_vcg/tgefuncs.c: In function ‘WriteGVnAC_gridding’:
+3_vcg/tgefuncs.c:499:7: warning: unused variable ‘MM’ [-Wunused-variable]
+  499 |   int MM = 2*Nm;
+      |       ^~
+3_vcg/tgefuncs.c: In function ‘initialize’:
+3_vcg/tgefuncs.c:92:1: warning: control reaches end of non-void function [-Wreturn-type]
+   92 | }
+      | ^
+3_vcg/tgefuncs.c: In function ‘initialize_gridding’:
+3_vcg/tgefuncs.c:344:1: warning: control reaches end of non-void function [-Wreturn-type]
+  344 | }
+      | ^
+gcc -I<LOCAL_DEPENDENCY_PREFIX>/include -O2 -std=gnu11 -Wall -Wextra -fopenmp 4_fbe/viber.c 4_fbe/viber_funcs.c -L<LOCAL_DEPENDENCY_PREFIX>/lib/x86_64-linux-gnu -Wl,-rpath,<LOCAL_DEPENDENCY_PREFIX>/lib/x86_64-linux-gnu -lfftw3_omp -lfftw3 -lgsl -lgslcblas -lcfitsio -lm -o 4_fbe/viber
+4_fbe/viber.c: In function ‘main’:
+4_fbe/viber.c:54:60: warning: unused variable ‘O3’ [-Wunused-variable]
+   54 |   double **I1, **I2, **I3, **D1, **D2, **D3, **O1, **O2, **O3; ;
+      |                                                            ^~
+4_fbe/viber.c:54:54: warning: unused variable ‘O2’ [-Wunused-variable]
+   54 |   double **I1, **I2, **I3, **D1, **D2, **D3, **O1, **O2, **O3; ;
+      |                                                      ^~
+4_fbe/viber.c:54:48: warning: unused variable ‘O1’ [-Wunused-variable]
+   54 |   double **I1, **I2, **I3, **D1, **D2, **D3, **O1, **O2, **O3; ;
+      |                                                ^~
+4_fbe/viber.c:52:22: warning: unused variable ‘dU’ [-Wunused-variable]
+   52 |   double U1, U2, U3, dU, *ULow, *UHigh, *Uavg;
+      |                      ^~
+4_fbe/viber.c:51:30: warning: unused variable ‘Bierr’ [-Wunused-variable]
+   51 |   double Bispec, Biana,Denom,Bierr, Num, tt, mu, PU1, PU2, PU3;
+      |                              ^~~~~
+4_fbe/viber.c:51:24: warning: unused variable ‘Denom’ [-Wunused-variable]
+   51 |   double Bispec, Biana,Denom,Bierr, Num, tt, mu, PU1, PU2, PU3;
+      |                        ^~~~~
+4_fbe/viber.c:42:9: warning: unused variable ‘OPT’ [-Wunused-variable]
+   42 |   char  OPT;
+      |         ^~~
+4_fbe/viber.c:40:50: warning: unused variable ‘beta’ [-Wunused-variable]
+   40 |   double sigma1, sigma2, ff1, LL, Area,ff2,Av=1.,beta=-1.;
+      |                                                  ^~~~
+4_fbe/viber.c:40:44: warning: unused variable ‘Av’ [-Wunused-variable]
+   40 |   double sigma1, sigma2, ff1, LL, Area,ff2,Av=1.,beta=-1.;
+      |                                            ^~
+4_fbe/viber.c:40:40: warning: unused variable ‘ff2’ [-Wunused-variable]
+   40 |   double sigma1, sigma2, ff1, LL, Area,ff2,Av=1.,beta=-1.;
+      |                                        ^~~
+4_fbe/viber.c:40:31: warning: unused variable ‘LL’ [-Wunused-variable]
+   40 |   double sigma1, sigma2, ff1, LL, Area,ff2,Av=1.,beta=-1.;
+      |                               ^~
+4_fbe/viber.c:40:26: warning: unused variable ‘ff1’ [-Wunused-variable]
+   40 |   double sigma1, sigma2, ff1, LL, Area,ff2,Av=1.,beta=-1.;
+      |                          ^~~
+4_fbe/viber.c:40:18: warning: unused variable ‘sigma2’ [-Wunused-variable]
+   40 |   double sigma1, sigma2, ff1, LL, Area,ff2,Av=1.,beta=-1.;
+      |                  ^~~~~~
+4_fbe/viber.c:40:10: warning: unused variable ‘sigma1’ [-Wunused-variable]
+   40 |   double sigma1, sigma2, ff1, LL, Area,ff2,Av=1.,beta=-1.;
+      |          ^~~~~~
+4_fbe/viber.c:37:14: warning: unused parameter ‘argc’ [-Wunused-parameter]
+   37 | int main(int argc, char *argv[])
+      |          ~~~~^~~~
+4_fbe/viber.c:343:10: warning: ignoring return value of ‘fread’ declared with attribute ‘warn_unused_result’ [-Wunused-result]
+  343 |          fread(&D1[ii][jj],sizeof(double),1,fp);
+      |          ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+4_fbe/viber.c:346:10: warning: ignoring return value of ‘fread’ declared with attribute ‘warn_unused_result’ [-Wunused-result]
+  346 |          fread(&I1[ii][jj],sizeof(double),1,fp);
+      |          ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+4_fbe/viber.c:369:13: warning: ignoring return value of ‘fread’ declared with attribute ‘warn_unused_result’ [-Wunused-result]
+  369 |             fread(&D2[ii][jj],sizeof(double),1,fp);
+      |             ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+4_fbe/viber.c:373:13: warning: ignoring return value of ‘fread’ declared with attribute ‘warn_unused_result’ [-Wunused-result]
+  373 |             fread(&I2[ii][jj],sizeof(double),1,fp);
+      |             ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+4_fbe/viber.c:394:15: warning: ignoring return value of ‘fread’ declared with attribute ‘warn_unused_result’ [-Wunused-result]
+  394 |               fread(&D3[ii][jj],sizeof(double),1,fp);
+      |               ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+4_fbe/viber.c:398:15: warning: ignoring return value of ‘fread’ declared with attribute ‘warn_unused_result’ [-Wunused-result]
+  398 |               fread(&I3[ii][jj],sizeof(double),1,fp);
+      |               ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+4_fbe/viber.c:167:3: warning: ‘Area’ is used uninitialized [-Wuninitialized]
+  167 |   fprintf(stdout,"N1=%ld  N2=%ld  dU=%e (in rad^{-1}) Area = %lf \n",N1,N2,Du,Area);
+      |   ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+4_fbe/viber.c:40:35: note: ‘Area’ was declared here
+   40 |   double sigma1, sigma2, ff1, LL, Area,ff2,Av=1.,beta=-1.;
+      |                                   ^~~~
+4_fbe/viber_funcs.c: In function ‘fft_init’:
+4_fbe/viber_funcs.c:96:21: warning: unused variable ‘po1’ [-Wunused-variable]
+   96 |   fftw_plan p1, pd1,po1;
+      |                     ^~~
+4_fbe/viber_funcs.c:89:26: warning: unused variable ‘comp_ro’ [-Wunused-variable]
+   89 |   fftw_complex *i1,*d1, *comp_ro;
+      |                          ^~~~~~~
+4_fbe/viber_funcs.c:79:24: warning: unused variable ‘ja’ [-Wunused-variable]
+   79 |   int i,j,k,m,index,ia,ja,index_1;
+      |                        ^~
+4_fbe/viber_funcs.c:79:11: warning: unused variable ‘k’ [-Wunused-variable]
+   79 |   int i,j,k,m,index,ia,ja,index_1;
+      |           ^
+4_fbe/viber_funcs.c: In function ‘fft_init_orig’:
+4_fbe/viber_funcs.c:199:4: warning: this ‘for’ clause does not guard... [-Wmisleading-indentation]
+  199 |    for(i=0;i<N1;++i)
+      |    ^~~
+4_fbe/viber_funcs.c:226:5: note: ...this statement, but the latter is misleadingly indented as if it were guarded by the ‘for’
+  226 |     fftw_execute(p1); // perform FT
+      |     ^~~~~~~~~~~~
+4_fbe/viber_funcs.c:185:26: warning: unused variable ‘comp_ro’ [-Wunused-variable]
+  185 |   fftw_complex *i1,*d1, *comp_ro;
+      |                          ^~~~~~~
+4_fbe/viber_funcs.c:177:15: warning: unused variable ‘iagv’ [-Wunused-variable]
+  177 |   int ic, jc, iagv;
+      |               ^~~~
+4_fbe/viber_funcs.c:177:11: warning: unused variable ‘jc’ [-Wunused-variable]
+  177 |   int ic, jc, iagv;
+      |           ^~
+4_fbe/viber_funcs.c:177:7: warning: unused variable ‘ic’ [-Wunused-variable]
+  177 |   int ic, jc, iagv;
+      |       ^~
+4_fbe/viber_funcs.c:176:32: warning: unused variable ‘ja’ [-Wunused-variable]
+  176 |   int i,j,k,m,index,index_1,ia,ja, nn=0;
+      |                                ^~
+4_fbe/viber_funcs.c:176:21: warning: unused variable ‘index_1’ [-Wunused-variable]
+  176 |   int i,j,k,m,index,index_1,ia,ja, nn=0;
+      |                     ^~~~~~~
+4_fbe/viber_funcs.c:176:11: warning: unused variable ‘k’ [-Wunused-variable]
+  176 |   int i,j,k,m,index,index_1,ia,ja, nn=0;
+      |           ^
+4_fbe/viber_funcs.c: In function ‘power_spec_GVRL’:
+4_fbe/viber_funcs.c:347:28: warning: unused variable ‘denom’ [-Wunused-variable]
+  347 |   double binsiz,uu, numer, denom, re_part, im_part;
+      |                            ^~~~~
+4_fbe/viber_funcs.c: In function ‘power_spec_GV’:
+4_fbe/viber_funcs.c:428:28: warning: unused variable ‘denom’ [-Wunused-variable]
+  428 |   double binsiz,uu, numer, denom;
+      |                            ^~~~~
+4_fbe/viber_funcs.c: In function ‘power_spec_GV_Ntig’:
+4_fbe/viber_funcs.c:498:20: warning: unused variable ‘ja’ [-Wunused-variable]
+  498 |   int i,j,index,ia,ja,tmp;
+      |                    ^~
+4_fbe/viber_funcs.c:497:28: warning: unused variable ‘denom’ [-Wunused-variable]
+  497 |   double binsiz,uu, numer, denom;
+      |                            ^~~~~
+4_fbe/viber_funcs.c: In function ‘read_uvdata’:
+4_fbe/viber_funcs.c:624:18: warning: variable ‘Nz’ set but not used [-Wunused-but-set-variable]
+  624 |     long Nu, Nv, Nz, Nvis;
+      |                  ^~
+4_fbe/viber_funcs.c:623:67: warning: unused variable ‘npixels’ [-Wunused-variable]
+  623 |     long naxes[3], fpixel[3], lpixel[3], inc[3]={1,1,1}, nbuffer, npixels, ii, jj, index, index1;
+      |                                                                   ^~~~~~~
+4_fbe/viber_funcs.c:623:58: warning: unused variable ‘nbuffer’ [-Wunused-variable]
+  623 |     long naxes[3], fpixel[3], lpixel[3], inc[3]={1,1,1}, nbuffer, npixels, ii, jj, index, index1;
+      |                                                          ^~~~~~~
+4_fbe/viber_funcs.c: In function ‘initialize’:
+4_fbe/viber_funcs.c:794:10: warning: unused variable ‘jj’ [-Wunused-variable]
+  794 |   int ii,jj,nn,sf,Ngrid, Ng;
+      |          ^~
+4_fbe/viber_funcs.c: In function ‘initialize_gridding’:
+4_fbe/viber_funcs.c:840:25: warning: unused variable ‘NN’ [-Wunused-variable]
+  840 |   int ii,jj,nn,sf,Ngrid,NN;
+      |                         ^~
+4_fbe/viber_funcs.c:840:16: warning: unused variable ‘sf’ [-Wunused-variable]
+  840 |   int ii,jj,nn,sf,Ngrid,NN;
+      |                ^~
+4_fbe/viber_funcs.c:840:10: warning: unused variable ‘jj’ [-Wunused-variable]
+  840 |   int ii,jj,nn,sf,Ngrid,NN;
+      |          ^~
+4_fbe/viber_funcs.c: In function ‘initialize’:
+4_fbe/viber_funcs.c:835:1: warning: control reaches end of non-void function [-Wreturn-type]
+  835 | }
+      | ^
+4_fbe/viber_funcs.c: In function ‘initialize_gridding’:
+4_fbe/viber_funcs.c:884:1: warning: control reaches end of non-void function [-Wreturn-type]
+  884 | }
+      | ^
+4_fbe/viber_funcs.c: In function ‘ReadGVnAC’:
+4_fbe/viber_funcs.c:909:3: warning: ignoring return value of ‘fread’ declared with attribute ‘warn_unused_result’ [-Wunused-result]
+  909 |   fread(&FWHM,sizeof(FWHM),1,fp);
+      |   ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+4_fbe/viber_funcs.c:910:3: warning: ignoring return value of ‘fread’ declared with attribute ‘warn_unused_result’ [-Wunused-result]
+  910 |   fread(&dUx,sizeof(dUx),1,fp);
+      |   ^~~~~~~~~~~~~~~~~~~~~~~~~~~~
+4_fbe/viber_funcs.c:911:3: warning: ignoring return value of ‘fread’ declared with attribute ‘warn_unused_result’ [-Wunused-result]
+  911 |   fread(&fx,sizeof(fx),1,fp);
+      |   ^~~~~~~~~~~~~~~~~~~~~~~~~~
+4_fbe/viber_funcs.c:913:5: warning: ignoring return value of ‘fread’ declared with attribute ‘warn_unused_result’ [-Wunused-result]
+  913 |     fread(&nua[ii],sizeof(nua[ii]),1,fp);
+      |     ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+4_fbe/viber_funcs.c:921:13: warning: ignoring return value of ‘fread’ declared with attribute ‘warn_unused_result’ [-Wunused-result]
+  921 |             fread(&GVRRre[index][nn],sizeof(GVRRre[index][jj]),1,fp);
+      |             ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+4_fbe/viber_funcs.c:922:13: warning: ignoring return value of ‘fread’ declared with attribute ‘warn_unused_result’ [-Wunused-result]
+  922 |             fread(&GVRRim[index][nn],sizeof(GVRRim[index][jj]),1,fp);
+      |             ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+4_fbe/viber_funcs.c:936:13: warning: ignoring return value of ‘fread’ declared with attribute ‘warn_unused_result’ [-Wunused-result]
+  936 |             fread(&GVLLre[index][nn],sizeof(GVLLre[index][jj]),1,fp);
+      |             ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+4_fbe/viber_funcs.c:937:13: warning: ignoring return value of ‘fread’ declared with attribute ‘warn_unused_result’ [-Wunused-result]
+  937 |             fread(&GVLLim[index][nn],sizeof(GVLLim[index][jj]),1,fp);
+      |             ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+4_fbe/viber_funcs.c:948:13: warning: ignoring return value of ‘fread’ declared with attribute ‘warn_unused_result’ [-Wunused-result]
+  948 |             fread(&SCRR[index][nn],sizeof(SCRR[index][jj]),1,fp);
+      |             ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+4_fbe/viber_funcs.c:949:13: warning: ignoring return value of ‘fread’ declared with attribute ‘warn_unused_result’ [-Wunused-result]
+  949 |             fread(&SCLL[index][nn],sizeof(SCLL[index][jj]),1,fp);
+      |             ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+4_fbe/viber_funcs.c: In function ‘ReadGVnAC_gridding’:
+4_fbe/viber_funcs.c:987:13: warning: ignoring return value of ‘fread’ declared with attribute ‘warn_unused_result’ [-Wunused-result]
+  987 |             fread(&GVRRre[index][nn],sizeof(GVRRre[index][nn]),1,fp);
+      |             ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+4_fbe/viber_funcs.c:988:13: warning: ignoring return value of ‘fread’ declared with attribute ‘warn_unused_result’ [-Wunused-result]
+  988 |             fread(&GVRRim[index][nn],sizeof(GVRRim[index][nn]),1,fp);
+      |             ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+4_fbe/viber_funcs.c:1005:13: warning: ignoring return value of ‘fread’ declared with attribute ‘warn_unused_result’ [-Wunused-result]
+ 1005 |             fread(&NTiG[index][nn],sizeof(NTiG[index][nn]),1,fp);
+      |             ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+In file included from <LOCAL_DEPENDENCY_PREFIX>/include/fitsio.h:205,
+                 from 4_fbe/viber_funcs.c:15:
+4_fbe/viber_funcs.c: In function ‘read_uvdata’:
+<LOCAL_DEPENDENCY_PREFIX>/include/longnam.h:360:31: warning: ‘nullval’ may be used uninitialized [-Wmaybe-uninitialized]
+  360 | #define fits_read_subset      ffgsv
+4_fbe/viber_funcs.c:694:9: note: in expansion of macro ‘fits_read_subset’
+  694 |     if( fits_read_subset(fptr,TDOUBLE,fpixel,lpixel,inc,nullval,buffer1,&anynull,&status) )
+      |         ^~~~~~~~~~~~~~~~
+4_fbe/viber_funcs.c:627:11: note: ‘nullval’ was declared here
+  627 |     void *nullval;
+      |           ^~~~~~~
+gcc -I<LOCAL_DEPENDENCY_PREFIX>/include -O2 -std=gnu11 -Wall -Wextra -fopenmp 4_fbe/viber_equi_fast.c 4_fbe/viber_funcs.c -L<LOCAL_DEPENDENCY_PREFIX>/lib/x86_64-linux-gnu -Wl,-rpath,<LOCAL_DEPENDENCY_PREFIX>/lib/x86_64-linux-gnu -lfftw3_omp -lfftw3 -lgsl -lgslcblas -lcfitsio -lm -o 4_fbe/viber_equi_fast
+4_fbe/viber_equi_fast.c: In function ‘main’:
+4_fbe/viber_equi_fast.c:371:4: warning: this ‘for’ clause does not guard... [-Wmisleading-indentation]
+  371 |    for(i=0;i<N1;++i)
+      |    ^~~
+4_fbe/viber_equi_fast.c:395:5: note: ...this statement, but the latter is misleadingly indented as if it were guarded by the ‘for’
+  395 |     fftw_execute(p1); // perform FT
+      |     ^~~~~~~~~~~~
+4_fbe/viber_equi_fast.c:363:15: warning: unused variable ‘iagv’ [-Wunused-variable]
+  363 |   int ic, jc, iagv;
+      |               ^~~~
+4_fbe/viber_equi_fast.c:363:11: warning: unused variable ‘jc’ [-Wunused-variable]
+  363 |   int ic, jc, iagv;
+      |           ^~
+4_fbe/viber_equi_fast.c:363:7: warning: unused variable ‘ic’ [-Wunused-variable]
+  363 |   int ic, jc, iagv;
+      |       ^~
+4_fbe/viber_equi_fast.c:362:7: warning: unused variable ‘index_1’ [-Wunused-variable]
+  362 |   int index_1, nn=0;
+      |       ^~~~~~~
+4_fbe/viber_equi_fast.c:353:13: warning: unused variable ‘ja’ [-Wunused-variable]
+  353 |  int m, ia, ja;
+      |             ^~
+4_fbe/viber_equi_fast.c:54:60: warning: unused variable ‘O3’ [-Wunused-variable]
+   54 |   double **I1, **I2, **I3, **D1, **D2, **D3, **O1, **O2, **O3; ;
+      |                                                            ^~
+4_fbe/viber_equi_fast.c:54:54: warning: unused variable ‘O2’ [-Wunused-variable]
+   54 |   double **I1, **I2, **I3, **D1, **D2, **D3, **O1, **O2, **O3; ;
+      |                                                      ^~
+4_fbe/viber_equi_fast.c:54:48: warning: unused variable ‘O1’ [-Wunused-variable]
+   54 |   double **I1, **I2, **I3, **D1, **D2, **D3, **O1, **O2, **O3; ;
+      |                                                ^~
+4_fbe/viber_equi_fast.c:54:42: warning: unused variable ‘D3’ [-Wunused-variable]
+   54 |   double **I1, **I2, **I3, **D1, **D2, **D3, **O1, **O2, **O3; ;
+      |                                          ^~
+4_fbe/viber_equi_fast.c:54:36: warning: unused variable ‘D2’ [-Wunused-variable]
+   54 |   double **I1, **I2, **I3, **D1, **D2, **D3, **O1, **O2, **O3; ;
+      |                                    ^~
+4_fbe/viber_equi_fast.c:54:24: warning: unused variable ‘I3’ [-Wunused-variable]
+   54 |   double **I1, **I2, **I3, **D1, **D2, **D3, **O1, **O2, **O3; ;
+      |                        ^~
+4_fbe/viber_equi_fast.c:54:18: warning: unused variable ‘I2’ [-Wunused-variable]
+   54 |   double **I1, **I2, **I3, **D1, **D2, **D3, **O1, **O2, **O3; ;
+      |                  ^~
+4_fbe/viber_equi_fast.c:52:22: warning: unused variable ‘dU’ [-Wunused-variable]
+   52 |   double U1, U2, U3, dU, *ULow, *UHigh, *Uavg;
+      |                      ^~
+4_fbe/viber_equi_fast.c:52:18: warning: unused variable ‘U3’ [-Wunused-variable]
+   52 |   double U1, U2, U3, dU, *ULow, *UHigh, *Uavg;
+      |                  ^~
+4_fbe/viber_equi_fast.c:52:14: warning: unused variable ‘U2’ [-Wunused-variable]
+   52 |   double U1, U2, U3, dU, *ULow, *UHigh, *Uavg;
+      |              ^~
+4_fbe/viber_equi_fast.c:51:60: warning: unused variable ‘PU3’ [-Wunused-variable]
+   51 |   double Bispec, Biana,Denom,Bierr, Num, tt, mu, PU1, PU2, PU3;
+      |                                                            ^~~
+4_fbe/viber_equi_fast.c:51:55: warning: unused variable ‘PU2’ [-Wunused-variable]
+   51 |   double Bispec, Biana,Denom,Bierr, Num, tt, mu, PU1, PU2, PU3;
+      |                                                       ^~~
+4_fbe/viber_equi_fast.c:51:30: warning: unused variable ‘Bierr’ [-Wunused-variable]
+   51 |   double Bispec, Biana,Denom,Bierr, Num, tt, mu, PU1, PU2, PU3;
+      |                              ^~~~~
+4_fbe/viber_equi_fast.c:51:24: warning: unused variable ‘Denom’ [-Wunused-variable]
+   51 |   double Bispec, Biana,Denom,Bierr, Num, tt, mu, PU1, PU2, PU3;
+      |                        ^~~~~
+4_fbe/viber_equi_fast.c:47:13: warning: unused variable ‘l’ [-Wunused-variable]
+   47 |   int i, j, l, NB, *num;
+      |             ^
+4_fbe/viber_equi_fast.c:44:9: warning: unused variable ‘fp’ [-Wunused-variable]
+   44 |   FILE *fp,*fp1,*fp2;
+      |         ^~
+4_fbe/viber_equi_fast.c:43:18: warning: unused variable ‘file1’ [-Wunused-variable]
+   43 |   char file[512],file1[512],file2[512];
+      |                  ^~~~~
+4_fbe/viber_equi_fast.c:42:9: warning: unused variable ‘OPT’ [-Wunused-variable]
+   42 |   char  OPT;
+      |         ^~~
+4_fbe/viber_equi_fast.c:40:50: warning: unused variable ‘beta’ [-Wunused-variable]
+   40 |   double sigma1, sigma2, ff1, LL, Area,ff2,Av=1.,beta=-1.;
+      |                                                  ^~~~
+4_fbe/viber_equi_fast.c:40:44: warning: unused variable ‘Av’ [-Wunused-variable]
+   40 |   double sigma1, sigma2, ff1, LL, Area,ff2,Av=1.,beta=-1.;
+      |                                            ^~
+4_fbe/viber_equi_fast.c:40:40: warning: unused variable ‘ff2’ [-Wunused-variable]
+   40 |   double sigma1, sigma2, ff1, LL, Area,ff2,Av=1.,beta=-1.;
+      |                                        ^~~
+4_fbe/viber_equi_fast.c:40:31: warning: unused variable ‘LL’ [-Wunused-variable]
+   40 |   double sigma1, sigma2, ff1, LL, Area,ff2,Av=1.,beta=-1.;
+      |                               ^~
+4_fbe/viber_equi_fast.c:40:26: warning: unused variable ‘ff1’ [-Wunused-variable]
+   40 |   double sigma1, sigma2, ff1, LL, Area,ff2,Av=1.,beta=-1.;
+      |                          ^~~
+4_fbe/viber_equi_fast.c:40:18: warning: unused variable ‘sigma2’ [-Wunused-variable]
+   40 |   double sigma1, sigma2, ff1, LL, Area,ff2,Av=1.,beta=-1.;
+      |                  ^~~~~~
+4_fbe/viber_equi_fast.c:40:10: warning: unused variable ‘sigma1’ [-Wunused-variable]
+   40 |   double sigma1, sigma2, ff1, LL, Area,ff2,Av=1.,beta=-1.;
+      |          ^~~~~~
+4_fbe/viber_equi_fast.c:37:14: warning: unused parameter ‘argc’ [-Wunused-parameter]
+   37 | int main(int argc, char *argv[])
+      |          ~~~~^~~~
+4_fbe/viber_equi_fast.c:164:3: warning: ‘Area’ is used uninitialized [-Wuninitialized]
+  164 |   fprintf(stdout,"N1=%ld  N2=%ld  dU=%e (in rad^{-1}) Area = %lf \n",N1,N2,Du,Area);
+      |   ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+4_fbe/viber_equi_fast.c:40:35: note: ‘Area’ was declared here
+   40 |   double sigma1, sigma2, ff1, LL, Area,ff2,Av=1.,beta=-1.;
+      |                                   ^~~~
+4_fbe/viber_funcs.c: In function ‘fft_init’:
+4_fbe/viber_funcs.c:96:21: warning: unused variable ‘po1’ [-Wunused-variable]
+   96 |   fftw_plan p1, pd1,po1;
+      |                     ^~~
+4_fbe/viber_funcs.c:89:26: warning: unused variable ‘comp_ro’ [-Wunused-variable]
+   89 |   fftw_complex *i1,*d1, *comp_ro;
+      |                          ^~~~~~~
+4_fbe/viber_funcs.c:79:24: warning: unused variable ‘ja’ [-Wunused-variable]
+   79 |   int i,j,k,m,index,ia,ja,index_1;
+      |                        ^~
+4_fbe/viber_funcs.c:79:11: warning: unused variable ‘k’ [-Wunused-variable]
+   79 |   int i,j,k,m,index,ia,ja,index_1;
+      |           ^
+4_fbe/viber_funcs.c: In function ‘fft_init_orig’:
+4_fbe/viber_funcs.c:199:4: warning: this ‘for’ clause does not guard... [-Wmisleading-indentation]
+  199 |    for(i=0;i<N1;++i)
+      |    ^~~
+4_fbe/viber_funcs.c:226:5: note: ...this statement, but the latter is misleadingly indented as if it were guarded by the ‘for’
+  226 |     fftw_execute(p1); // perform FT
+      |     ^~~~~~~~~~~~
+4_fbe/viber_funcs.c:185:26: warning: unused variable ‘comp_ro’ [-Wunused-variable]
+  185 |   fftw_complex *i1,*d1, *comp_ro;
+      |                          ^~~~~~~
+4_fbe/viber_funcs.c:177:15: warning: unused variable ‘iagv’ [-Wunused-variable]
+  177 |   int ic, jc, iagv;
+      |               ^~~~
+4_fbe/viber_funcs.c:177:11: warning: unused variable ‘jc’ [-Wunused-variable]
+  177 |   int ic, jc, iagv;
+      |           ^~
+4_fbe/viber_funcs.c:177:7: warning: unused variable ‘ic’ [-Wunused-variable]
+  177 |   int ic, jc, iagv;
+      |       ^~
+4_fbe/viber_funcs.c:176:32: warning: unused variable ‘ja’ [-Wunused-variable]
+  176 |   int i,j,k,m,index,index_1,ia,ja, nn=0;
+      |                                ^~
+4_fbe/viber_funcs.c:176:21: warning: unused variable ‘index_1’ [-Wunused-variable]
+  176 |   int i,j,k,m,index,index_1,ia,ja, nn=0;
+      |                     ^~~~~~~
+4_fbe/viber_funcs.c:176:11: warning: unused variable ‘k’ [-Wunused-variable]
+  176 |   int i,j,k,m,index,index_1,ia,ja, nn=0;
+      |           ^
+4_fbe/viber_funcs.c: In function ‘power_spec_GVRL’:
+4_fbe/viber_funcs.c:347:28: warning: unused variable ‘denom’ [-Wunused-variable]
+  347 |   double binsiz,uu, numer, denom, re_part, im_part;
+      |                            ^~~~~
+4_fbe/viber_funcs.c: In function ‘power_spec_GV’:
+4_fbe/viber_funcs.c:428:28: warning: unused variable ‘denom’ [-Wunused-variable]
+  428 |   double binsiz,uu, numer, denom;
+      |                            ^~~~~
+4_fbe/viber_funcs.c: In function ‘power_spec_GV_Ntig’:
+4_fbe/viber_funcs.c:498:20: warning: unused variable ‘ja’ [-Wunused-variable]
+  498 |   int i,j,index,ia,ja,tmp;
+      |                    ^~
+4_fbe/viber_funcs.c:497:28: warning: unused variable ‘denom’ [-Wunused-variable]
+  497 |   double binsiz,uu, numer, denom;
+      |                            ^~~~~
+4_fbe/viber_funcs.c: In function ‘read_uvdata’:
+4_fbe/viber_funcs.c:624:18: warning: variable ‘Nz’ set but not used [-Wunused-but-set-variable]
+  624 |     long Nu, Nv, Nz, Nvis;
+      |                  ^~
+4_fbe/viber_funcs.c:623:67: warning: unused variable ‘npixels’ [-Wunused-variable]
+  623 |     long naxes[3], fpixel[3], lpixel[3], inc[3]={1,1,1}, nbuffer, npixels, ii, jj, index, index1;
+      |                                                                   ^~~~~~~
+4_fbe/viber_funcs.c:623:58: warning: unused variable ‘nbuffer’ [-Wunused-variable]
+  623 |     long naxes[3], fpixel[3], lpixel[3], inc[3]={1,1,1}, nbuffer, npixels, ii, jj, index, index1;
+      |                                                          ^~~~~~~
+4_fbe/viber_funcs.c: In function ‘initialize’:
+4_fbe/viber_funcs.c:794:10: warning: unused variable ‘jj’ [-Wunused-variable]
+  794 |   int ii,jj,nn,sf,Ngrid, Ng;
+      |          ^~
+4_fbe/viber_funcs.c: In function ‘initialize_gridding’:
+4_fbe/viber_funcs.c:840:25: warning: unused variable ‘NN’ [-Wunused-variable]
+  840 |   int ii,jj,nn,sf,Ngrid,NN;
+      |                         ^~
+4_fbe/viber_funcs.c:840:16: warning: unused variable ‘sf’ [-Wunused-variable]
+  840 |   int ii,jj,nn,sf,Ngrid,NN;
+      |                ^~
+4_fbe/viber_funcs.c:840:10: warning: unused variable ‘jj’ [-Wunused-variable]
+  840 |   int ii,jj,nn,sf,Ngrid,NN;
+      |          ^~
+4_fbe/viber_funcs.c: In function ‘initialize’:
+4_fbe/viber_funcs.c:835:1: warning: control reaches end of non-void function [-Wreturn-type]
+  835 | }
+      | ^
+4_fbe/viber_funcs.c: In function ‘initialize_gridding’:
+4_fbe/viber_funcs.c:884:1: warning: control reaches end of non-void function [-Wreturn-type]
+  884 | }
+      | ^
+4_fbe/viber_funcs.c: In function ‘ReadGVnAC’:
+4_fbe/viber_funcs.c:909:3: warning: ignoring return value of ‘fread’ declared with attribute ‘warn_unused_result’ [-Wunused-result]
+  909 |   fread(&FWHM,sizeof(FWHM),1,fp);
+      |   ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+4_fbe/viber_funcs.c:910:3: warning: ignoring return value of ‘fread’ declared with attribute ‘warn_unused_result’ [-Wunused-result]
+  910 |   fread(&dUx,sizeof(dUx),1,fp);
+      |   ^~~~~~~~~~~~~~~~~~~~~~~~~~~~
+4_fbe/viber_funcs.c:911:3: warning: ignoring return value of ‘fread’ declared with attribute ‘warn_unused_result’ [-Wunused-result]
+  911 |   fread(&fx,sizeof(fx),1,fp);
+      |   ^~~~~~~~~~~~~~~~~~~~~~~~~~
+4_fbe/viber_funcs.c:913:5: warning: ignoring return value of ‘fread’ declared with attribute ‘warn_unused_result’ [-Wunused-result]
+  913 |     fread(&nua[ii],sizeof(nua[ii]),1,fp);
+      |     ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+4_fbe/viber_funcs.c:921:13: warning: ignoring return value of ‘fread’ declared with attribute ‘warn_unused_result’ [-Wunused-result]
+  921 |             fread(&GVRRre[index][nn],sizeof(GVRRre[index][jj]),1,fp);
+      |             ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+4_fbe/viber_funcs.c:922:13: warning: ignoring return value of ‘fread’ declared with attribute ‘warn_unused_result’ [-Wunused-result]
+  922 |             fread(&GVRRim[index][nn],sizeof(GVRRim[index][jj]),1,fp);
+      |             ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+4_fbe/viber_funcs.c:936:13: warning: ignoring return value of ‘fread’ declared with attribute ‘warn_unused_result’ [-Wunused-result]
+  936 |             fread(&GVLLre[index][nn],sizeof(GVLLre[index][jj]),1,fp);
+      |             ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+4_fbe/viber_funcs.c:937:13: warning: ignoring return value of ‘fread’ declared with attribute ‘warn_unused_result’ [-Wunused-result]
+  937 |             fread(&GVLLim[index][nn],sizeof(GVLLim[index][jj]),1,fp);
+      |             ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+4_fbe/viber_funcs.c:948:13: warning: ignoring return value of ‘fread’ declared with attribute ‘warn_unused_result’ [-Wunused-result]
+  948 |             fread(&SCRR[index][nn],sizeof(SCRR[index][jj]),1,fp);
+      |             ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+4_fbe/viber_funcs.c:949:13: warning: ignoring return value of ‘fread’ declared with attribute ‘warn_unused_result’ [-Wunused-result]
+  949 |             fread(&SCLL[index][nn],sizeof(SCLL[index][jj]),1,fp);
+      |             ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+4_fbe/viber_funcs.c: In function ‘ReadGVnAC_gridding’:
+4_fbe/viber_funcs.c:987:13: warning: ignoring return value of ‘fread’ declared with attribute ‘warn_unused_result’ [-Wunused-result]
+  987 |             fread(&GVRRre[index][nn],sizeof(GVRRre[index][nn]),1,fp);
+      |             ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+4_fbe/viber_funcs.c:988:13: warning: ignoring return value of ‘fread’ declared with attribute ‘warn_unused_result’ [-Wunused-result]
+  988 |             fread(&GVRRim[index][nn],sizeof(GVRRim[index][nn]),1,fp);
+      |             ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+4_fbe/viber_funcs.c:1005:13: warning: ignoring return value of ‘fread’ declared with attribute ‘warn_unused_result’ [-Wunused-result]
+ 1005 |             fread(&NTiG[index][nn],sizeof(NTiG[index][nn]),1,fp);
+      |             ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+In file included from <LOCAL_DEPENDENCY_PREFIX>/include/fitsio.h:205,
+                 from 4_fbe/viber_funcs.c:15:
+4_fbe/viber_funcs.c: In function ‘read_uvdata’:
+<LOCAL_DEPENDENCY_PREFIX>/include/longnam.h:360:31: warning: ‘nullval’ may be used uninitialized [-Wmaybe-uninitialized]
+  360 | #define fits_read_subset      ffgsv
+4_fbe/viber_funcs.c:694:9: note: in expansion of macro ‘fits_read_subset’
+  694 |     if( fits_read_subset(fptr,TDOUBLE,fpixel,lpixel,inc,nullval,buffer1,&anynull,&status) )
+      |         ^~~~~~~~~~~~~~~~
+4_fbe/viber_funcs.c:627:11: note: ‘nullval’ was declared here
+  627 |     void *nullval;
+      |           ^~~~~~~

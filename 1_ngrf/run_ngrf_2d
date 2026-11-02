@@ -1,0 +1,2 @@
+./ngrf_2d 1024 3.438 10010 0.2 0.8 154.255e6 40.00e03 1.0 1 output_data/image_T_1c.FITS output_data/image_Q.beam.In_1c.FITS
+
